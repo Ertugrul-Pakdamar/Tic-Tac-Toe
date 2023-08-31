@@ -3,7 +3,8 @@ import random
 def print_board(board):
     for i in range(0, int(len(board))):
         print(board[i][0] + "|" + board[i][1] + "|" + board[i][2])
-        print("-----")
+        if i < 2:
+            print("-----")
 
 def is_win(board, turn):
     if turn == "X":
